@@ -7,4 +7,4 @@ include:
 exclude:
   - name: All
     paths:
-      - src/ignored_dir
+      - src/ignored-dir
