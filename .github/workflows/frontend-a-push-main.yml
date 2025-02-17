@@ -47,5 +47,6 @@ jobs:
             qodana-test-frontend-a-${{ runner.os }}-${{ github.run_id }}-
               ${{ hashFiles('qodana-push-main.yaml') }}
           additional-cache-key: qodana-test-frontend-a-${{ runner.os }}
+          upload-result: true
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TEST }}
