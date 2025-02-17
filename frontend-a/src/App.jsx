@@ -6,6 +6,8 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const unused = "this is unused"
+
   return (
     <>
       <div>
