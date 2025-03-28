@@ -62,7 +62,7 @@ jobs:
           args: |
             --project-dir,frontend-a,
             --linter,jetbrains/qodana-js:2024.3,
-            --config,qodana-push-main.yaml,
+            --config,qodana-pull-request.yaml,
             --fail-threshold,0
           artifact-name: qodana-test
           cache-dir: qodana-test-frontend-a/.cache/qodana
