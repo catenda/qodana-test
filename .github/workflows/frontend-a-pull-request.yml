@@ -60,9 +60,9 @@ jobs:
         uses: JetBrains/qodana-action@v2024.3
         with:
           args: |
-            --source-directory,frontend-a,
+            --project-dir,frontend-a,
             --linter,jetbrains/qodana-js:2024.3,
-            --config,frontend-a/qodana-pull-request.yaml,
+            --config,qodana-pull-request.yaml,
             --fail-threshold,0
           artifact-name: qodana-test
           cache-dir: qodana-test-frontend-a/.cache/qodana
