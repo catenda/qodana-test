@@ -1,4 +1,4 @@
-version: "1.0"
+version: '1.0'
 linter: jetbrains/qodana-js:2024.3
 profile:
   name: qodana.recommended
@@ -9,12 +9,12 @@ exclude:
     paths:
       - frontend-a/src/ignored-dir
 dependencyIgnores:
-  - name: "@pdftron/webviewer-video"
-  - name: "@pdftron/webviewer"
-  - name: "ag-grid-enterprise"
+  - name: '@pdftron/webviewer-video'
+  - name: '@pdftron/webviewer'
+  - name: 'ag-grid-enterprise'
 dependencyOverrides:
-  - name: "dompurify"
-    version: "3.2.4"
+  - name: 'dompurify'
+    version: '3.2.4'
     licenses:
-      - key: "Apache-2.0"
-        url: "https://github.com/cure53/DOMPurify/blob/main/LICENSE"
+      - key: 'Apache-2.0'
+        url: 'https://github.com/cure53/DOMPurify/blob/main/LICENSE'
