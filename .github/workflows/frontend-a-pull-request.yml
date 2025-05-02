@@ -57,11 +57,11 @@ jobs:
 
       - name: Qodana Scan
         if: steps.changed-files.outputs.any_changed == 'true'
-        uses: JetBrains/qodana-action@v2024.3
+        uses: JetBrains/qodana-action@v2025.1
         with:
           args: |
             --source-directory,frontend-a,
-            --linter,jetbrains/qodana-js:2024.3,
+            --linter,jetbrains/qodana-js:2025.1,
             --config,frontend-a/qodana-pull-request.yaml,
             --fail-threshold,0
           artifact-name: qodana-test

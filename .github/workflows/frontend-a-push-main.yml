@@ -35,7 +35,7 @@ jobs:
         working-directory: frontend-a
 
       - name: Qodana Scan
-        uses: JetBrains/qodana-action@v2024.3
+        uses: JetBrains/qodana-action@v2025.1
         with:
           args: |
             --project-dir,frontend-a,
