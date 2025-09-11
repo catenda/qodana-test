@@ -28,7 +28,7 @@ jobs:
           fetch-depth: 0
 
       - name: Qodana Scan
-        uses: JetBrains/qodana-action@v2024.3
+        uses: JetBrains/qodana-action@v2025.2
         with:
           artifact-name: qodana-test-backends
           cache-dir: qodana-test-backends/.cache/qodana
