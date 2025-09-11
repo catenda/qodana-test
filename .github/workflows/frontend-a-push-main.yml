@@ -4,8 +4,8 @@ on:
     branches:
       - main
     paths:
-      - "frontend-a/**"
-      - ".github/workflows/frontend-a-push-main.yml"
+      - 'frontend-a/**'
+      - '.github/workflows/frontend-a-push-main.yml'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref && github.ref_name || github.run_id }}
@@ -25,9 +25,9 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          cache: "npm"
+          cache: 'npm'
           cache-dependency-path: frontend-a/package-lock.json
-          node-version-file: ".node-version"
+          node-version-file: '.node-version'
 
       - name: Install dependencies
         run: npm ci --ignore-scripts
@@ -35,7 +35,7 @@ jobs:
         working-directory: frontend-a
 
       - name: Qodana Scan
-        uses: JetBrains/qodana-action@v2024.3
+        uses: JetBrains/qodana-action@v2025.2
         with:
           args: |
             --project-dir,frontend-a,
