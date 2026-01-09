@@ -25,6 +25,7 @@ jobs:
           files: |
             frontend-a/**
             .github/workflows/frontend-a-pull-request.yml
+            package.json
           use_rest_api: true
 
       - run: |
